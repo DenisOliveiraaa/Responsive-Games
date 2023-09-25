@@ -1,0 +1,79 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    height: 100vh;
+    display: center;/*no relative, o layout rejeita*/
+    background: #56baed;
+  }
+  
+  /*tamanho das cartas*/
+  .memory-game {
+    width: 620px;
+    height: 550px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    perspective: 1000px;
+  }
+  
+  .memory-card {
+    width: calc(25% - 10px);
+    height: calc(33.333% - 10px);
+    margin: 5px;
+    position: relative;
+    transform: scale(1);
+    transform-style: preserve-3d;
+    transition: transform .8s;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, .3);
+  }
+  
+  
+  @media (max-width: 768px) {
+    .memory-card {
+      width: calc(50% - 10px);
+    }
+  }
+  @media (max-width: 576px) {
+    .memory-card {
+      width: calc(100% - 10px);
+    }
+  }
+  
+  #id-do-elemento:hover 
+  
+  { background-color: #000000; 
+  
+  transition: 0.5s;
+  
+  opacity: 0.7;
+  
+  }
+  
+  
+  .memory-card:active {
+    transform: scale(0.9);
+    transition: transform .15s;/*velocidade da carta*/
+  }
+  
+  .memory-card.flip {
+    transform: rotateY(180deg);
+  }
+  
+  .front-face,
+  .back-face {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    position: absolute;
+    border-radius: 5px;
+    background: #0a0a0a;
+    backface-visibility: hidden;
+  }
+  
+  .front-face {
+    transform: rotateY(180deg);
+  }
