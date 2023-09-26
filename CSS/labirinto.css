@@ -1,0 +1,17 @@
+body {
+    background-color: #56baed;
+}
+
+.canvas {
+    width: 95vw;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+canvas{
+    max-width: 100%;
+}
+
+
