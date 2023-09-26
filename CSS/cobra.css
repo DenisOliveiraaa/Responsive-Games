@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Bungee&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Bungee", cursive;
+}
+
+body {
+  background-color: #56baed;
+  display: block;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+  overflow-x: hidden;
+}
+.canvas-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+canvas {
+  background-color: #8bd8ff;
+  max-width: 100%; 
+  height: auto; 
+  display: block; 
+  transform-origin: top left;
+  transform: scale(1); 
+  transition: transform 0.3s;
+}
+
+.score{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.8rem;
+
+
+}
+
+.score--value{
+font-weight: 700;
+font-size: 4.5rem;
+display: block;
+margin-top: -10px;
+
+
+
+}
+
+.menu-screen{
+  position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.game-over{
+text-transform: uppercase;
+font-weight: 700;
+font-size: 3rem;
+
+
+
+}
+
+
+.final-score{
+font-weight: 500;
+font-size: 1.5rem;
+
+}
+
+.btn-play{
+  border: none;
+  border-radius: 100px;
+  padding: 10px 15px 10px 12px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #333;
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  cursor: pointer;
+
+
+
+
+}
