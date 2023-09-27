@@ -1,0 +1,11 @@
+#card-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    margin: 20px;
+    border: 2px solid #fff;
+    max-width: 376px;
+}
