@@ -163,7 +163,6 @@
 	function loop() {
 		update();
 		render();
-		chegada();
 		requestAnimationFrame(loop, cnv);
 	}
 
